@@ -1,0 +1,297 @@
+/* ------------------------------------------------------------------------------
+	Template Name: Orion
+	Author: Designstub
+	Author URI: http://www.designstub.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+-------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------
+   Typography
+-------------------------------------------------------------------------------*/
+
+
+@import url(http://fonts.googleapis.com/css?family=Source%20Sans%20Pro:300,400,500,600,700);
+/* ------------------------------------------------------------------------------
+   Global Styles
+-------------------------------------------------------------------------------*/
+
+a {
+	color: #ff5335;
+}
+a:hover {
+	color: #d92709;
+	text-decoration: none;
+}
+a:focus {
+	outline: none;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ------------------------------------------------------------------------------
+   main
+-------------------------------------------------------------------------------*/
+   
+
+
+/* ------------------------------------------------------------------------------
+   Subscription form 
+-------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------
+   Countdown styles
+-------------------------------------------------------------------------------*/
+   
+/* ------------------------------------------------------------------------------
+   Social 
+-------------------------------------------------------------------------------*/
+
+.social {
+	float: none;
+}
+.social li {
+	display: inline-block;
+	padding-right: .8em;
+}
+.social li:last-child {
+	padding-right: 0;
+}
+.social li a {
+	display: block;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	color: #fff;
+	border-radius: 50%;
+	background: #ff5335;
+	position: relative;
+ -webkit-transition: all .8s ease;
+ transition: all .8s ease;
+}
+.social li a:hover {
+	color: #fff;
+	background: #d92709;
+}
+/* ------------------------------------------------------------------------------
+   Features
+-------------------------------------------------------------------------------*/
+   
+.section-spacing {
+	padding: 4.5em 0;
+}
+.features.section-spacing {
+	padding-bottom: 2.25em;
+}
+
+/* ------------------------------------------------------------------------------
+   Twitter feed
+-------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------
+   Contact
+-------------------------------------------------------------------------------*/
+ 
+/* ------------------------------------------------------------------------------
+   contact Form Validation
+-------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------
+   Map
+-------------------------------------------------------------------------------*/
+
+/* ------------------------------------------------------------------------------
+   footer
+-------------------------------------------------------------------------------*/
+   
+.site-footer {
+	background: #464646;
+}
+.site-footer.section-spacing {
+	padding: 4.5em 0;
+}
+.site-footer h3 {
+	margin: 0;
+}
+.site-footer .social {
+	float: none;
+	margin-bottom: 1.5em;
+}
+.site-footer small {
+	color: #888;
+}
+/* ------------------------------------------------------------------------------
+   scroll top
+-------------------------------------------------------------------------------*/
+   
+.scroll-top {
+	margin-bottom: 0;
+}
+.scroll-top a {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: .8em 1em;
+	display: none;
+	z-index: 200;
+	border-radius: 5px;
+ -webkit-transition: background .5s ease-in;
+ transition: background .5s ease-in;
+}
+.scroll-top a:hover {
+	background: #ff5335;
+}
+/* ------------------------------------------------------------------------------
+   Preloader styles
+-------------------------------------------------------------------------------*/
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fefefe;
+	z-index: 9999;
+	height: 100%;
+	height: 100%;
+}
+#status {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url(../img/load.gif) no-repeat center center;
+	margin: -170px 0 0 -100px;
+}
+
+/* ------------------------------------------------------------------------------
+   Small devices (tablets, 768px and up)
+-------------------------------------------------------------------------------*/
+   
+@media (min-width: 768px) {
+ .main {
+padding: 3em 0 7.5em;
+}
+ .logo {
+ text-align: justify;
+ margin-bottom: 0;
+}
+ .welcome-message {
+padding-top: 6em;
+}
+ .social {
+float: right;
+}
+ ul.countdown {
+padding-top: 6em;
+}
+ ul.countdown li span {
+font-size: 27px;
+}
+ ul.countdown li.seperator {
+ font-size: 27px;
+ padding: 0 20px;
+}
+}
+
+/* ------------------------------------------------------------------------------
+   Medium devices (desktops, 992px and up) 
+-------------------------------------------------------------------------------*/
+   
+@media (min-width: 992px) {
+ .main {
+ padding: 3em 0 16em;
+ position: fixed !important;
+ top: 0;
+ z-index: 1;
+ width: 100%;
+}
+ .features, .twitter-feed, .contact, .site-footer {
+ position: relative;
+ z-index: 2;
+}
+ .welcome-message {
+padding-top: 9em;
+}
+ .section-spacing {
+padding: 6em 0;
+}
+ .features.section-spacing {
+ padding: 6em 0 3em;
+ margin-top: 46.8em;
+}
+ .product-features {
+margin-bottom: 3.75em;
+}
+ .features.section-spacing, .contact {
+background: #fff;
+}
+ .contact-form {
+margin-top: 0;
+}
+ .animated {
+ -webkit-animation-duration: 1s;
+ animation-duration: 1s;
+ -webkit-animation-fill-mode: both;
+ animation-fill-mode: both;
+}
+ @-webkit-keyframes fadeInUp {
+0% {
+opacity:0;
+-webkit-transform:translate3d(0, 100%, 0);
+transform:translate3d(0, 100%, 0);
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+transform:none;
+}
+}
+@keyframes fadeInUp {
+0% {
+opacity:0;
+-webkit-transform:translate3d(0, 100%, 0);
+-ms-transform:translate3d(0, 100%, 0);
+transform:translate3d(0, 100%, 0);
+}
+100% {
+opacity:1;
+-webkit-transform:none;
+-ms-transform:none;
+transform:none;
+}
+}
+ .fadeInUp {
+ -webkit-animation-name: fadeInUp;
+ animation-name: fadeInUp;
+}
+}
+
+/* ------------------------------------------------------------------------------
+   small devices 
+-------------------------------------------------------------------------------*/
+   
+
+
+@media (max-width: 320px) {
+ ul.countdown li span {
+font-size: 21px;
+}
+ ul.countdown li.seperator {
+ font-size: 25.629px;
+ vertical-align: top;
+ padding: 0 2px;
+}
+ ul.countdown li p {
+font-size: 12.642px;
+}
+}
